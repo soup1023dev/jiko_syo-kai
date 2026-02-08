@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>welcome!</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">THE_HOMESPACE</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">ホーム</a></li>
+      <li><a href="../product.html">製品(キット,実装済み基板etc)</a></li>
+      <li><a href="../notice.html">お知らせ</a></li>
+      <li><a href="../contact.html">お問い合わせ</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <nav class="text-1">サイト開設<br>(2026年2月8日)</nav>
+  <p>この度、C&Pのサイトが開設されました。</p>
+  <p>今後ともよろしくお願いいたします。</p>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
